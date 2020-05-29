@@ -8,33 +8,33 @@ There are two data files that are used in this notebook (`flights.parquet` and `
 
 #### File Schema
 * **`flights.parquet`** *(3,606,803 total records)*
- |-- origin_airport_code: string (nullable = true)
- |-- destination_airport_code: string (nullable = true)
- |-- origin_city: string (nullable = true)
- |-- destination_city: string (nullable = true)
- |-- passengers: long (nullable = true)
- |-- seats: long (nullable = true)
- |-- flights: long (nullable = true)
- |-- distance: double (nullable = true)
- |-- origin_population: long (nullable = true)
- |-- destination_population: long (nullable = true)
- |-- flight_year: long (nullable = true)
- |-- flight_month: long (nullable = true)
- |-- \_\_index_level_0\_\_: long (nullable = true)
+	* origin_airport_code: string (nullable = true)
+	* destination_airport_code: string (nullable = true)
+	* origin_city: string (nullable = true)
+	* destination_city: string (nullable = true)
+	* passengers: long (nullable = true)
+	* seats: long (nullable = true)
+	* flights: long (nullable = true)
+	* distance: double (nullable = true)
+	* origin_population: long (nullable = true)
+ 	* destination_population: long (nullable = true)
+	* flight_year: long (nullable = true)
+	* flight_month: long (nullable = true)
+	* \_\_index_level_0\_\_: long (nullable = true)
 
 * **`airport-codes.csv`** *(54,591 total records)*
- |-- ident: string (nullable = true)
- |-- type: string (nullable = true)
- |-- name: string (nullable = true)
- |-- elevation_ft: double (nullable = true)
- |-- continent: string (nullable = true)
- |-- iso_country: string (nullable = true)
- |-- iso_region: string (nullable = true)
- |-- municipality: string (nullable = true)
- |-- gps_code: string (nullable = true)
- |-- iata_code: string (nullable = true)
- |-- local_code: string (nullable = true)
- |-- coordinates: string (nullable = true)
+	* ident: string (nullable = true)
+	* type: string (nullable = true)
+	* name: string (nullable = true)
+	* elevation_ft: double (nullable = true)
+	* continent: string (nullable = true)
+	* iso_country: string (nullable = true)
+	* iso_region: string (nullable = true)
+	* municipality: string (nullable = true)
+	* gps_code: string (nullable = true)
+	* iata_code: string (nullable = true)
+	* local_code: string (nullable = true)
+	* coordinates: string (nullable = true)
 
 ## Tasks
 1. Load the data and print the schema
@@ -86,6 +86,3 @@ There are two data files that are used in this notebook (`flights.parquet` and `
 
 ## Author
 **Xander Hieken**
-
-## Acknowledgements
-[https://github.com/xanderhieken/SparkAggregations/blob/master/Spark%20Aggregations.ipynb]
